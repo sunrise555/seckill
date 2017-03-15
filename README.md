@@ -1,3 +1,3 @@
 # seckill
 seckill system
-项目基于慕课网(http://www.imooc.com)上《Java高并发秒杀API》四个系列的视频讲解内容完成
+</br>项目基于<a href="http://www.imooc.com">慕课网</a>上《Java高并发秒杀API》四个系列的视频讲解内容完成
