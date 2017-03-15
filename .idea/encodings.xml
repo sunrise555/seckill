@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/sunny/seckill/dao/SeckillDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sunny/seckill/entity/Seckill.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sunny/seckill/exception/RepeatKillException.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sunny/seckill/exception/SeckillCloseException.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sunny/seckill/exception/SeckillException.java" charset="GBK" />
+  </component>
+</project>
