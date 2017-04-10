@@ -12,6 +12,9 @@
 * 前端 Bootstrap
 * 数据库 MySql
 * 缓存优化 Redis
+### 测试
+* 访问地址：`http://localhost:8080/seckill/list`
+* 使用jetty:run/Tomcat8.0
 ### 文档结构
 * src/main/resources
 	* /spring　　————　spring配置文件
@@ -27,4 +30,13 @@
 * 动静态数据分离：CDN缓存，Redis后端缓存
 * 存储过程：事务SQL在MySql端执行
 * 事务竞争优化：减少事务锁的时间
+## 结果展示
+* 秒杀列表展示<br>
+![秒杀列表](https://raw.githubusercontent.com/sunrise555/seckill/master/image/%E7%A7%92%E6%9D%80%E5%88%97%E8%A1%A8%E9%A1%B5.png)
+* 秒杀详情页
+![秒杀开始](https://raw.githubusercontent.com/sunrise555/seckill/master/image/%E7%A7%92%E6%9D%80%E5%BC%80%E5%A7%8B.png)
+![秒杀倒计时](https://raw.githubusercontent.com/sunrise555/seckill/master/image/%E7%A7%92%E6%9D%80%E5%80%92%E8%AE%A1%E6%97%B6.png)
+![秒杀资格验证](https://raw.githubusercontent.com/sunrise555/seckill/master/image/%E7%A7%92%E6%9D%80%E8%B5%84%E6%A0%BC%E9%AA%8C%E8%AF%81.png)
+![秒杀结束](https://raw.githubusercontent.com/sunrise555/seckill/master/image/%E7%A7%92%E6%9D%80%E7%BB%93%E6%9D%9F.png)
+
 ## 待更新2017/04/10
