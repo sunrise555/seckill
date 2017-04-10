@@ -14,7 +14,7 @@
 * 缓存优化 Redis
 ### 测试
 * 访问地址：`http://localhost:8080/seckill/list`
-* 使用jetty:run/Tomcat8.0
+* 启动：使用jetty:run/Tomcat8.0
 ### 文档结构
 * src/main/resources
 	* /spring　　————　spring配置文件
@@ -24,7 +24,7 @@
 	* /dao、/web、/service、/entity　　————　dao层、web层、service层、实体层
     * /dto　　————　数据封装
     * /enum　　————　枚举类
-    * /exception　　————　异常处理
+    * /exception　　————　异常处理
 ## 并发优化
 * 前端控制：暴露接口，防止按钮重复点击
 * 动静态数据分离：CDN缓存，Redis后端缓存
