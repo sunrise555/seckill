@@ -22,9 +22,9 @@
 * src/main/sql　　    ----　sql文件　　　
 * src/main/javａ
     * /dao、/web、/service、/entity　　----　dao层、web层、service层、实体层
-    * /dto　　                        ----　数据封装
-    * /enum　　                       ----　枚举类
-    * /exception　　                  ----　异常处理
+    * /dto　　----　数据封装
+    * /enum　　----　枚举类
+    * /exception　----　异常处理
 ## 并发优化
 * 前端控制：暴露接口，防止按钮重复点击
 * 动静态数据分离：CDN缓存，Redis后端缓存
