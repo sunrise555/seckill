@@ -17,9 +17,9 @@
 * 启动：使用jetty:run/Tomcat8.0
 ### 文档结构
 * src/main/resources
-	* /spring　　 ————　spring配置文件
-	* /mappers　　————　mybatis映射配置文件
-* src/main/sql　　    ————　sql文件　　　
+	* /spring　　 ----　spring配置文件
+	* /mappers　　----　mybatis映射配置文件
+* src/main/sql　　    ----　sql文件　　　
 * src/main/javａ
     * /dao、/web、/service、/entity　　————　dao层、web层、service层、实体层
     * /dto　　                        ————　数据封装
