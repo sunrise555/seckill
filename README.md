@@ -20,7 +20,7 @@
 	* /spring　　 ----　spring配置文件
 	* /mappers　　----　mybatis映射配置文件
 * src/main/sql　　    ----　sql文件　　　
-* src/main/javａ
+* src/main/java
     * /dao、/web、/service、/entity　　----　dao层、web层、service层、实体层
     * /dto　　----　数据封装
     * /enum　　----　枚举类
