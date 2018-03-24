@@ -1,5 +1,5 @@
 //存放主要交互逻辑的js代码
-//模块化：分包,json
+//模块化：分包,jso
 
 var seckill = {
 		//封装秒杀相关ajax的URL
@@ -115,7 +115,10 @@ var seckill = {
 						var inputPhone = $('#killphoneKey').val();
 						if(seckill.validatePhone(inputPhone)) {
 							//将电话写入cookie
-							$.cookie('killPhone', inputPhone,{expires:7,path:'/seckill'});
+                            var millisecond = new Date().getTime();
+                            var expiresTime = new Date(millisecond + 60 * 1000 * 1);
+                            // 设置cookie 1分钟失效
+							$.cookie('killPhone', inputPhone,{expires:expiresTime,path:'/seckill'});
 							//刷新页面
 							window.location.reload();
 						}else{
