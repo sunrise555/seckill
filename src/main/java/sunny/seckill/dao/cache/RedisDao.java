@@ -21,13 +21,18 @@ public class RedisDao {
 	
 	//数据库连接池
 	private JedisPool jedisPool;
-	
+	// 使用Protostuff将seckill对象序列化
 	private RuntimeSchema<Seckill> schema = RuntimeSchema.createFrom(Seckill.class);
 	
 	public RedisDao(String ip, int port) {
 		jedisPool = new JedisPool(ip, port);
 	}
-	
+
+	/**
+	 * 从redis缓存中通过key来获取seckill对象
+	 * @param seckillId
+	 * @return
+	 */
 	public Seckill getSeckill(long seckillId) {
 		//redis操作：缓存
 		try {
@@ -52,18 +57,24 @@ public class RedisDao {
 		}
 		return null;
 	}
-	
+
+	/**
+	 * 将seckill对象序列化后存入redis
+	 * @param seckill
+	 * @return
+	 */
 	public String putSeckill(Seckill seckill) {
 		// 先将seckil序列化->bytes[]
 		try {
 			Jedis jedis = jedisPool.getResource();
 			try {
 				String key = "seckill:" + seckill.getSeckillId();
+				// redis里存储的数据结构时key-value，key自己设置为seckill:ID
 				byte[] bytes = ProtostuffIOUtil.toByteArray(seckill, schema, 
 						LinkedBuffer.allocate(LinkedBuffer.DEFAULT_BUFFER_SIZE));
 				// 缓存时间
 				int timeout = 60 * 60;//秒为单位，缓存时间1小时
-				//超时缓存
+				//超时缓存, 将bytes和key关联
 				String result = jedis.setex(key.getBytes(), timeout, bytes);//成功后会返回OK
 				return result;
 			} finally {

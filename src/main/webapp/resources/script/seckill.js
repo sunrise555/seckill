@@ -98,7 +98,7 @@ var seckill = {
 			init : function(params) {
 				//用户手机验证，计时交互
 				//这里先暂时在前端完成手机号的存储，存在cookie中，实际开发中由后端存入数据库
-				var killPhone = $.cookie('killPhone');
+				var  killPhone = $.cookie('killPhone');
 				var  startTime = params['startTime'];
 				var  endTime = params['endTime'];
 				var  seckillId = params['seckillId'];
